@@ -5,6 +5,7 @@ async function getProducts() {
     const products = await response.json();
     return products;
 }
+
 function useGetProducts() {
     const [products, setProducts] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -25,4 +26,5 @@ function useGetProducts() {
 
     return { products, loading, error };
 }
+
 export default useGetProducts;
