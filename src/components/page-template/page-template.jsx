@@ -1,31 +1,8 @@
-import { useState, useEffect } from "react";
-
 import { Outlet } from "react-router-dom";
 
-import getProducts from "../../scripts/shop-items-data";
+import useGetProducts from "../../scripts/shop-items-data";
 
 import NavigationBar from '../navigation-bar/navigation-bar';
-
-function useGetProducts() {
-    const [products, setProducts] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        getProducts()
-        .then(prod => {
-            setProducts(prod);
-            setLoading(false);
-        })
-        .catch(error => {
-            console.error(error);
-            setError(error);
-            setLoading(false);
-        });
-    }, []);
-
-    return { products, loading, error };
-}
 
 function PageTemplate() {
     const { products, loading, error } = useGetProducts();
