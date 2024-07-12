@@ -1,6 +1,5 @@
 import styles from "./navigation-bar.module.css";
 
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import HomeIcon from "../../icons/home-icon.svg";
