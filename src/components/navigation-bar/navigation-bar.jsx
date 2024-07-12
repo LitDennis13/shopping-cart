@@ -2,7 +2,7 @@ import styles from "./navigation-bar.module.css";
 
 import { useNavigate } from "react-router-dom";
 
-import HomeIcon from "../../icons/home-icon.svg";
+import RandomIcon from "../../icons/random-icon.svg";
 import ShopIcon from "../../icons/shop-icon.svg";
 import CartIcon from "../../icons/cart-icon.svg";
 
@@ -22,10 +22,12 @@ function NavigationBar() {
     }
     
     return <nav className={styles.nav}>
-        <button className={styles.button} onClick={navigateToHome}>
-            <img src={HomeIcon} className={styles.icon}/>
-            <p className={styles.name}>Home</p>
+
+        <button className={styles.title} onClick={navigateToHome}>
+            <img src={RandomIcon}/>
+            <h1>Random Store</h1>
         </button>
+
         <button className={styles.button} onClick={navigateToShop}>
             <img src={ShopIcon} className={styles.icon}/>
             <p className={styles.name}>Shop</p>

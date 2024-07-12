@@ -7,6 +7,23 @@
     background-color: rgb(220,220,220);
 }
 
+.title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: inherit;
+}
+
+.title > h1 {
+    font-size: min(4vh, 5vw);
+}
+
+.title > img {
+    height: min(5vw, 4vh);
+}
+
 .button {
     display: flex;
     justify-content: center;
@@ -17,11 +34,11 @@
     height: 70%;
     background-color: rgb(255,255,255);
 }
-.button:hover {
+.button:hover, .title:hover {
     transform: scale(1.1);
     transition: transform .2s;
 }
-.button:active {
+.button:active, .title:active  {
     transform: scale(1.2);
     transition: transform .2s;
 }
