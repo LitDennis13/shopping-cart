@@ -1,0 +1,34 @@
+.homePage {
+    background-color: rgb(220,220,220);
+    height: 94vh;
+}
+
+.title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: inherit;
+    margin-right: auto;
+}
+
+.title > h1 {
+    font-size: 5vw;
+}
+
+.title > img {
+    height: min(5vw, 4vh);
+}
+
+.desc {
+
+}
+
+.miniShopPage {
+    display: grid;
+    grid-template: 300px / repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 2vh;
+    padding: 0vw 4vw;
+}
+
