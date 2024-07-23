@@ -32,11 +32,6 @@ function HomePage() {
     }, [screenWidth]);
 
     return <div className={styles.homePage}>
-        <div className={styles.title}>
-        <img src={RandomIcon} alt="Random Store Icon" className={styles.logo} />
-        <h1>Random Store!!!</h1>
-        </div>
-        
         <p className={styles.desc}>A Store with the most random things 💀</p>
         <div className={styles.miniShopPage}>
         {productsToDisplay.map((product) => {

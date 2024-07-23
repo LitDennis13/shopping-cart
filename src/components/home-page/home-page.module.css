@@ -1,28 +1,12 @@
 .homePage {
     background-color: rgb(220,220,220);
-    height: 94vh;
-}
-
-.title {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: inherit;
-    margin-right: auto;
-}
-
-.title > h1 {
-    font-size: 5vw;
-}
-
-.title > img {
-    height: min(5vw, 4vh);
+    height: 86vh;
+    padding: 4vh 0px;
 }
 
 .desc {
-
+    font-size: min(4vh, 5vw);
+    margin-bottom: 4vh;
 }
 
 .miniShopPage {
