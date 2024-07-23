@@ -9,12 +9,12 @@ function ShopPage() {
         {products.map((product) => {
            let imageScaleClass = product.UseWidthClass ? styles.productCardImgWidthScale : styles.productCardImgHeightScale;
 
-            return <div key={product.id} className={styles.productCard}>
+            return <button key={product.id} className={styles.productCard}>
             <img src={product.image} alt={product.title} className={imageScaleClass}/>
             <p className={styles.productCardTitle}>{product.title}</p>
             <p className={styles.productCardPrice}>${product.price}</p>
             <p className={styles.productCardRating}>{product.rating.rate} out of 5 Stars</p>
-            </div>
+            </button>
         })}
     </div>;
 }

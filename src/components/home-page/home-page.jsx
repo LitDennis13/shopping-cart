@@ -37,12 +37,12 @@ function HomePage() {
         {productsToDisplay.map((product) => {
             let imageScaleClass = product.UseWidthClass ? shopStyles.productCardImgWidthScale : shopStyles.productCardImgHeightScale;
 
-            return <div key={product.id} className={shopStyles.productCard}>
+            return <button key={product.id} className={shopStyles.productCard}>
             <img src={product.image} alt={product.title} className={imageScaleClass}/>
             <p className={shopStyles.productCardTitle}>{product.title}</p>
             <p className={shopStyles.productCardPrice}>${product.price}</p>
             <p className={shopStyles.productCardRating}>{product.rating.rate} out of 5 Stars</p> 
-            </div>
+            </button>
         })}
         </div>
     </div>;
