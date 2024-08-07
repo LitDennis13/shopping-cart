@@ -3,7 +3,7 @@ import RandomIcon from "../../icons/random-icon.svg";
 import styles from "./home-page.module.css";
 import shopStyles from "../shop-page/shop-page.module.css";
 
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function getProductsToDisplay(products) {
@@ -31,14 +31,20 @@ function HomePage() {
 
     }, [screenWidth]);
 
+    const navigate = useNavigate();
+    
+    function navigateToProductPage(productID) {
+        navigate(`/shop/${productID}`);
+    }
+    
+    
     return <div className={styles.homePage}>
         <p className={styles.desc}>A Store with the most random things 💀</p>
         <div className={styles.miniShopPage}>
         {productsToDisplay.map((product) => {
-            let imageScaleClass = product.UseWidthClass ? shopStyles.productCardImgWidthScale : shopStyles.productCardImgHeightScale;
 
-            return <button key={product.id} className={shopStyles.productCard}>
-            <img src={product.image} alt={product.title} className={imageScaleClass}/>
+            return <button key={product.id} className={shopStyles.productCard} onClick={() => navigateToProductPage(product.id)}>
+            <img src={product.image} alt={product.title} />
             <p className={shopStyles.productCardTitle}>{product.title}</p>
             <p className={shopStyles.productCardPrice}>${product.price}</p>
             <p className={shopStyles.productCardRating}>{product.rating.rate} out of 5 Stars</p> 

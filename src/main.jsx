@@ -7,6 +7,7 @@ import PageTemplate from './components/page-template/page-template';
 import HomePage from './components/home-page/home-page';
 import ShopPage from './components/shop-page/shop-page';
 import CartPage from './components/cart-page/cart-page';
+import ProductPage from './components/product-page/product-page';
 import ErrorPage from './components/error-page/error-page';
 
 const router = createBrowserRouter([
@@ -20,8 +21,12 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: "/shop",
-        element: <ShopPage />
+        path: "/shop/",
+        element: <ShopPage />,
+      },
+      {
+        path: "/shop/:id",
+        element: <ProductPage />
       },
       {
         path: "/cart",

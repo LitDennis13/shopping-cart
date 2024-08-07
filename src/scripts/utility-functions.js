@@ -15,4 +15,15 @@ function shuffle(arrayParam) {
     }
     return array;
 }
-export { shuffle };
+
+function getProductArrayLocation(id, productList) {
+    for (let i = 0; i < productList.length; i++) {
+        if (id == productList[i].id) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+
+export { shuffle, getProductArrayLocation };

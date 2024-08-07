@@ -2,7 +2,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    height: 6vh;
+    height: 58px;
     column-gap: 4vw;
     background-color: rgb(220,220,220);
     padding: 0px 1.5vw;
@@ -19,11 +19,11 @@
 }
 
 .title > h1 {
-    font-size: min(4vh, 5vw);
+    font-size: min(6vw, 39px);
 }
 
 .title > img {
-    height: min(5vw, 4vh);
+    height: min(6vw, 39px);
 }
 
 .button {
@@ -50,9 +50,9 @@
 }
 
 .icon {
-    height: min(100%, 4.5vw);
+    height: min(4vw, 26px);
 }
 
 .name {
-    font-size: min(180%, 4vh, 4vw);
+    font-size: min(4vw, 26px);
 }

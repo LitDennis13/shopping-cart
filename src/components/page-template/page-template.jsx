@@ -5,7 +5,6 @@ import useGetProducts from "../../scripts/shop-items-data";
 import NavigationBar from '../navigation-bar/navigation-bar';
 import { shuffle } from "../../scripts/utility-functions";
 
-
 function setProductImageCssClass(products) {
     let newProductList = [...products];
     let index = 0;
