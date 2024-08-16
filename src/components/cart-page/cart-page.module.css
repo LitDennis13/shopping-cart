@@ -189,10 +189,6 @@
     padding: 10px 10px 10px;
 }
 
-.itemListItem > p {
-    
-}
-
 .totalTitle {
     grid-area: 1 / 1 / 2 / 3;
     justify-self: center;
