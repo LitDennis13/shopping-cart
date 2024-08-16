@@ -1,7 +1,7 @@
 .homePage {
     background-color: rgb(220,220,220);
     height: 86vh;
-    padding: 4vh 0px;
+    padding: 4vh 1.5vw;
 }
 
 .desc {
@@ -13,6 +13,6 @@
     display: grid;
     grid-template: 300px / repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 2vh;
-    padding: 0vw 4vw;
+    padding: 0vw 0vw;
 }
 

@@ -32,33 +32,12 @@
 }
 
 .productTitle {
-    align-self: flex-start;
-}
-
-.productPrice {
-    
+    align-self: flex-end;
+    text-align: right;
 }
 
 .productRatingsNumber > strong {
     font-size: 1.3rem;
-}
-
-.addToCart {
-    border: none;
-    border-radius: 2rem;
-    height: 41px;
-    width: 70%;
-    font-size: 150%;
-    background-color: rgb(255,216,18);
-    transition: background-color .3s;
-}
-.addToCart:hover {
-    background-color: rgb(247,202,0);
-    transition: background-color .3s;
-}
-.addToCart:active {
-    background-color: rgb(240,184,1);
-    transition: background-color .3s;
 }
 
 .productOtherInfo {
@@ -82,8 +61,26 @@
     font-size: 1.2rem;
 }
 
-
-
 .productRatingCount {
     font-size: 1.2rem;
 }
+
+.addToCart {
+    border: none;
+    border-radius: 2rem;
+    height: 41px;
+    width: 70%;
+    font-size: 150%;
+    background-color: rgb(255,216,18);
+    transition: background-color .3s;
+}
+.addToCart:hover {
+    background-color: rgb(247,202,0);
+    transition: background-color .3s;
+}
+.addToCart:active {
+    background-color: rgb(240,184,1);
+    transition: background-color .3s;
+}
+
+

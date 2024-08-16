@@ -5,7 +5,7 @@
     row-gap: 2vw;
     column-gap: 2vh;
     height: 100%;
-    padding: 1vw 4vw;
+    padding: 1vw 1.5vw;
     background-color: rgb(220,220,220);
     
 }
@@ -31,7 +31,6 @@
 
 .productCard > img {
     grid-area: 1 / 1 / 2 / 3;
-    display: flex;
     justify-self: center;
     height: 130px;
 }
